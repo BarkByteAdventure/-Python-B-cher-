@@ -1,0 +1,79 @@
+Operatoren
+
+1. Arithmetische Operatoren
+
+----------------------------------------------------------------------------------------
+|Operatoren |   Name            |   Beschreibung                                        |
+----------------------------------------------------------------------------------------
+|   +       |   Addition        |   Addiert zwei Variablen                              |
+----------------------------------------------------------------------------------------
+|   -       |   Subtraktion     |   Subtrahiert eine Variable von der anderen           |
+----------------------------------------------------------------------------------------
+|   *       |   Multiplikation  |   Multipliziert zwei Variablen                        |
+----------------------------------------------------------------------------------------
+|   /       |   Division        |   Dividiert eine Variable durch die anderen           |
+----------------------------------------------------------------------------------------
+|   %       |   Modulo          |   Gibt den Rest einer Division von 2 Variablen zurück |
+----------------------------------------------------------------------------------------
+|   **      |   Exponent        |   Potenziert eine Zahl mit der anderen                |
+----------------------------------------------------------------------------------------
+
+2. Vergleichsoperationen
+
+-> bekommt man einen Wahrheitswert als Ausgabe
+----------------------------------------------------------------------------------------
+|Operatoren |   Name            |   Beschreibung                                        |
+----------------------------------------------------------------------------------------
+|   ==      |   Gleich          |   Zwei Variablen sind gleich                          |
+----------------------------------------------------------------------------------------
+|   !=      |   Ungleich        |   Zwei Variablen sind nicht gleich                    |
+----------------------------------------------------------------------------------------
+|   >       |   Größer          |   Eine Variable ist größer als die andere             |
+----------------------------------------------------------------------------------------
+|   <       |   Kleiner         |   Eine Variable ist kleiner als die andere            |
+----------------------------------------------------------------------------------------
+|   >=      |   Größer-Gleich   |   Eine Variable ist größer oder gleich der anderen    |
+----------------------------------------------------------------------------------------
+|   <=      |   Kleiner-Gleich  |   Eine Variable ist kleiner oder gleich der anderen   |
+----------------------------------------------------------------------------------------
+
+
+
+3. Zuweisoperatoren
+
+-> benutzt man um Variablen einen bestimmten Wert zuzuweisen
+----------------------------------------------------------------------------------
+| Operatoren    |   Beschreibung                                                  |
+----------------------------------------------------------------------------------
+|   =           |   Einer Variablen wird der Wert zugewiesen                      |
+----------------------------------------------------------------------------------
+|   +=          |   Eine Variable wird um den Wert erhöht                         |
+----------------------------------------------------------------------------------
+|   -=          |   Eine Variable wird um den Wert verringert                     |
+----------------------------------------------------------------------------------
+|   *=          |   Eine Variable wird um den Wert Multipliziert                  |
+----------------------------------------------------------------------------------
+|   /=          |   Eine Variable wird durch den Wert dividiert                   |
+----------------------------------------------------------------------------------
+|   %=          |   Eine Variable wird zum Restwert der Division durch den Wert   |
+----------------------------------------------------------------------------------
+|   **=         |   Eine Variable wird zum Ergebnis des Potenzierens mit den Wert |
+----------------------------------------------------------------------------------
+
+4. Logische Operatoren
+
+-> sind bei Bedingungen sehr wichtig
+-> kann sie gut mit Vergleichsoperatoren verbinden
+
+--------------------------------------------------------
+| Operatoren    |   Name    |   Beispiel                |
+--------------------------------------------------------
+|   or          |   oder    |   True or False = True    |
+--------------------------------------------------------
+|   and         |   und     |   True and False = False  |
+|               |           |   True and True = True    |
+--------------------------------------------------------
+|   not         |   nicht   |   not True = False        |
+|               |           |   not False = True        |
+---------------------------------------------------------
+

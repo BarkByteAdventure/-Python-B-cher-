@@ -1,0 +1,229 @@
+Sequenzen
+
+= Folge von Objekten die in sich geschlossen ist
+- stellt die simpelsten aller Datenstrukturen in Python Datenstrukturen
+- jedes Element hat eine eindeutige Nummer 
+    -> Position bzw. Index
+- Indexierung beginnt mit Nummer 0
+- letzte Index = Anzahl der Elemnte - 1
+
+
+1. Listen
+
+- eine der vielseitigsten Datentypen in Python
+- mittels eckiger Klammern deklariert []
+- Objekte in der Liste müssen nicht selben Typ entsprechen
+
+Bsp.:   liste = [10, "Hans", 8.9, True, 29, False]
+
+-> gibt das erste Element der Liste aus
+print(liste[0])
+
+-> gibt das vierte Element der Liste aus
+print(liste[3])
+
+-> Ändert den Wert beim Index 1         |
+liste[1] = "Peter"                      |   Methode mit For- Schleife funktioniert hier nicht
+                                         >  -> jedoch wäre es möglich den Index durch eine Schleife
+-> Ändert den Wert bei dem Index 3      |       immer um eins zu erhöhen
+liste[3] = 102                          |
+
+
+Bsp.:   for i in range(len(liste)):
+            liste[i] = 10
+        
+        print(len(liste))
+        -> len gibt die länge der Liste aus
+            -> in dem Bsp. 6
+
+        print(liste)
+        -> ändert alle Werte in der Liste zu 10
+
+
+1.1 Listenoperationen
+
+- kann Listen miteinander addieren oder Listen mit Zahlen multiplizieren
+- wenn ich zwei Listen miteinander addiere = Ergebnis eine neue Liste
+
+ -------------------------------------------------------------------
+|   Operation               |   	Ergebnis                        |
+ -------------------------------------------------------------------
+|   [1, 2, 3] + [3, 8 ,1]   |   [1, 2, 3, 3, 8 ,1]                  |
+ -------------------------------------------------------------------
+|   [12, "Hey"] * 3         |   [12, "Hey", 12, "Hey", 12, "Hey"]   |
+ -------------------------------------------------------------------
+
+1.2 Listenfunktionen
+
+- hier einige Bsp.:
+
+len(liste)
+    -> gibt die Länge  einer Liste zurück
+
+max(liste)
+    -> gibt den höchsten Wert einer Liste zurück
+
+min(liste)
+    -> gibt den niedrigsten Wert einer Liste zurück
+
+sum(liste)
+    -> addiert alle Werte in der Liste zusammen
+
+list(sequenz)
+    -> konvertiert eine beliebige Sequenz in einer Liste
+
+1.3 Listenmethode
+
+- hier einige Beispiele:
+
+list.append(objekt)
+    -> hängt ein Objekt an die Liste an
+
+list.count(objekt)
+    -> zählt wie oft ein Objekt in der Liste vorkommt
+
+list.extend(sequenz)
+    -> hängt eine beliebige Sequenz an die Liste an
+
+list.index(objekt)
+    -> gibt den Index zurück, bei dem ein Objekt als erstes vorkommt
+
+list.insert(index, objekt)
+    -> fügt ein Objekt an einem bestimmten Index ein
+
+list.remove(objekt)
+    -> entfernt ein Objekt aus der Liste
+
+list.reverse()
+    -> kehrt die Reihenfolge der Objekte einer Liste um
+
+list.sort([funktion])
+    -> sortiert eine Liste gemäß einer angegebenen Funktion
+
+1.4 Erweitertes Indexieren
+
+- gibt auch andere Methoden, indem man einfach Zahlen in die eckigen Klammern schreibt
+
+print(liste[-2])    
+-> gibt das zweite Element von rechts aus
+
+print(liste[:4])    
+-> gibt alle Elemente bis zum vierten Index aus
+
+print(liste[1:3])   
+-> gibt alle Elemente von Index 1 bis 3 aus
+
+print(liste[2:])    
+-> gibt alle Elemente von Index 2 bis zum Ende
+
+
+2. Tupel
+
+= Tupel ist eine Sequenz -> welche nicht manipluliert werden kann
+    -> Liste kann manipluliert werden
+
+Bsp.:   tupel = (10, "Anton", 4.3, 29)
+
+        -> wird in runden Klammern geschrieben
+
+2.1 Tupeloperationen
+
+- auslesen von Werten -> funktioniert genau wie bei Listen  
+- kann Tupel addieren, multiplizieren, Werte auslesen usw.
+
+2.2 Tupelfunktionen
+
+- Funktionen wie: len, max, min usw. 
+    -> können angewandt werden 
+        -> Tupel nicht verändert
+- nicht möglich eine Schreibmethode auf diese anzuwenden 
+    -> Tupel sind nicht statisch
+
+
+3. Dictionaries
+
+= übersetzt Wörterbuch/ Lexikon
+    -> Datenstruktur ein Objekt auf ein anderes verweist
+
+- Dictionary = eine Sequenz -> pro Eintrag zwei Werte hat:  1. eindeutigen Key 
+                                                            2. ein Value
+                                                                |
+                                                                V
+                                                            1 + 2 = Key-Value-Pair
+
+Bsp.:   dictionary = {"Name":"Alex", "Alter":25, "Groesse":1.80}
+
+        -> werden in geschwungenen Klammern dekleraiert {}
+        -> Schlüssel : Wert -> festgelegt werden
+
+        - Bsp. habe ich Schlüssel:  Name, Alter, Groesse -> festgelegt wurden
+                            Werte:  Alex, 25,  ,  1.80   -> festgelegt wurden
+        
+- rufen durch einzelnen Werte durch die Angabe derjeweiligen Keys auf
+- Keys sind unveränderbare Werte
+    -> müssen Strings, Zahlen oder Tupel sein
+    -> Werte sind (gegensatz zu Tupels) modefizierbar
+
+3.1 Dictonaryfunktionen
+
+- hier sind Bsp.:
+
+len(dict)
+    -> gibt die Länge eines Dictionaries zurück
+
+str(dict)
+    -> gibt einen String Darstellung des Dictionaries zurück
+
+3.2 Dictonarymethoden
+
+- hier sind Bsp.:
+
+dict.clear()
+    -> entfernt alle Elemente eines Dictionarys
+
+dict.copy()
+    -> gibt eine Kopie des Dictionarys zurück
+
+dict.fromkeys(dict)
+    -> Erstellt ein Dictionary mit denselben Keys und 'None' Werte
+
+dict.items()
+    -> gibt alle Elemente eines Dictionarys zurück
+
+dict.setdefault(key)
+    -> gibt den Value für einen Key zurück  
+    -> wenn Key nicht vorhanden ist -> Default-Wert "None" wird ausgegeben
+
+dict.update()
+    -> fügt den Inhalt eines Dictionarys in den eines anderen ein
+
+dict. values()
+    -> gibt alle Werte eines Dictionarys zurück
+
+
+4. Auf Werte in Sequenzen prüfen
+
+- bestimmte Wert in einer Sequenz enthalten
+    -> benutzt das Schlüsselwort in 
+
+Bsp.:   liste = [1, 2, 3, 4, 5, 6]
+
+            print(2 in liste)    
+            -> gibt True zurück wenn 2 in der Liste ist
+
+            print(10 in liste)   
+            -> gibt False zurück wenn 10 in der Liste ist
+
+Bsp.:   dict1 = {1: "a", 2: "b", 3: "c"}
+
+        print(2 in dict1)    
+        -> gibt True zurück wenn 2 in der Dictionary ist
+
+        print(10 in dict1)   
+        -> gibt False zurück wenn 10 in der Dictionary ist
+
+        print("A" in dict1)
+        -> gibt False zurück wenn "A" in der Dictionary ist
+
+        ! Merke: wenn hier NICHT das Schlüsselwort in benutzt wird, so bekommen wir nur dann True
+                 als Wert zurück. wenn das gesuchte Objekt als Key ethalten ist. !

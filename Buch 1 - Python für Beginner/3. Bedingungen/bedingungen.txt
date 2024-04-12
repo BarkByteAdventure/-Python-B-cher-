@@ -1,0 +1,165 @@
+Bedingungen
+
+-> im Skript Verzweigungen -> wo man Entscheide3n muss
+    = braucht man Bedingungen
+
+
+1. If-Statements
+
+- in Klammern einer If_abfrage befindet sich immer ein boolescher Ausdruck
+    -> Ausdruck entweder wahr oder falsch
+- nach der Abfrage folgt ein Doppelpunkt
+    
+    Bsp.:   a = 20
+            b = 10
+
+            if(a > b):
+                print("a ist größer!")
+
+
+2. Else-Statements
+
+- wenn das if-Statemten nicht richtig ist -> falsch
+    -> springt es zu else-Statements
+
+    Bsp.:   a = 20
+            b = 10
+
+            if(a > b):
+                print("a ist größer!")
+            else:
+                print("a ist nicht größer!")
+
+
+3. Elif-Statements
+
+- Schlüsselwort elif = Abkürzung für else-if
+- skript begibt sich genau dann in elif-Zweig -> of-Bedingung nicht erfüllt wurde
+    -> Elif-Bedingung aber schon
+
+    Bsp.:   a = 20
+            b = 10
+
+            if(a > b):
+                print("a ist größer als b!")
+            elif(a == b):
+                print("a ist gleich b!")
+            elif(a < b):
+                print("a ist kleiner als b!")    
+            else:
+                print("Etwas anderes ist der Fall")
+
+
+4. Schleife
+
+- kann mit if- und else-Statements den Verlauf in eine bestimmte Richtung lenken
+- läuft solange bis eine bestimmte Bedingung erfüllt ist
+
+    o
+    |
+    |<------------------
+    |                   |               - jedesmal wenn die Schleife ausgeführt wird
+    |                   |                   -> Bedingung wird geprüft
+    |             Schleifencode         - dies erfüllt -> das Ganze wird wiederholt
+    |                   ^               - nicht erfüllt -> Schleife stopt
+    v                   |
+Bedingung ---erfüllt----
+    |
+  nicht
+ erfüllt
+    |
+    v
+
+
+5. While-Schleife
+
+- ist eine Schleifenart
+- while bedeutet solange
+- bedeutet -> solange eine Bedingung gilt = führt die Schleife den Code ausgeführt
+
+    Bsp.:   x = 0
+
+            while(x < 10):
+                print(x)
+                x += 1 
+                # x wird immer um 1 erhöht pro Schleifendurchlauf
+            else:
+                print("x ist nicht mehr kleiner als 10!")
+
+
+6. Unendliche - Schleife
+
+- Schleife ended nicht, bevor Programm es nicht selber tut
+
+Bsp.:   while(True):
+            print("Diese Schleife ended nicht!")
+
+
+7. For - Schleife
+
+- Schlüsselwort fpr bedeutet für
+    -> Zusammenhang bedeutet es "für jedes Element in"
+- For- Schleife wiederholt eine Ansammlung von Dingen
+
+    Bsp.:   for i in range(5, 10)
+                print(i)
+
+- For-Schleife hat eine Laufvariable
+    -> jedem Durchlauf einen anderen Wert hat
+
+7.1 Iterieren über Strings
+
+- kann einen String anweden
+
+Bsp.:   for 1 in "Hallo":
+            print(1)
+    
+    -> Bsp.: gibt jeden Buchstaben einzeln aus
+
+7.2 Iterieren über Listen
+
+- kann auf Listen angewended werden
+
+Bsp.:   liste = [400, 23, 1, 43, "Hello"]
+
+        for i in liste:
+            print(i)
+
+
+8. Steuerung von Schleifen
+
+- wenn ich einen bestimmt Punkt , in einer Schleife manipulieren will
+    -> benötige ich Loop-Control-Statements
+
+8.1 Break - Statement
+
+- bewirkt das sofortige Terminieren einer Schleife
+
+Bsp.:   a = 0
+
+        while(a < 10):
+            print(a)
+            if(a == 5):
+                break
+
+8.2 Continue - Statement
+
+- übersprint nur den aktuellen Durchlauf der Schleife   
+    -> wird danach normal ausgeführt
+
+Bsp.:   liste = [400, 23, 1, 43, "Hello"]
+
+        for i in liste:
+            if(i == 23):
+                continue
+            print(i)
+        
+        -> 23 wird nicht ausgegeben
+
+8.3 Pass - Statement
+
+- ist besonderes Statement -> kann absolut gar nichts
+- wird dann eingesetzt wenn syntaktisch ein Code gefordert ist  
+    -> Entwickler jedoch erst irgendwann später hinzufügen möchten
+
+Bsp.:   

@@ -1,0 +1,59 @@
+Variablen
+
+= Platzhalter für Zahlenwerte oder komplexen Strukturen
+- reserviert für einen bestimmten Speicherbereich im RAM und werden genutzt um Werte zu speichern
+
+1. Datentypen
+
+- jeder Datenwert hat ein bestimmtes Schlüsselwort(Keyword)
+    -> mit man diese definieren kann
+
+1.1 Numerische Datentypen
+
+Datentypen  | Keyword   |  Beschreibung
+-------------------------------------------
+Integer     |   int     |   Eine Ganzzahl
+-------------------------------------------
+Float       |   float   |   Fließkommazahl
+-------------------------------------------
+Complex     |  complex  |   komplexe Zahl
+-------------------------------------------
+
+1.2 Strings
+
+- sind Zeichenketten -> Text
+- mit einem String kann man nicht rechnen
+
+1.3 Sequenzen
+
+Datentypen  | Keyword   |   Beschreibung
+-----------------------------------------------------------
+List        | list      |   Ansammlung von vielen Variablen
+-----------------------------------------------------------
+Tuple       | tuple     |   Unveränderbare Listen
+-----------------------------------------------------------
+Dictonary   | dict      |   Liste mit Key-Value Pairs
+-----------------------------------------------------------
+
+1.4 Boolean
+
+- Wert kann entweder wahr oder falsch sein
+- Keyword = bool
+
+2. Erstellen von Variablen
+
+variablenName = 10
+
+variableName    ->  Name der Variable
+    =           ->  Ist_Gleich_zeichen
+    10          ->  Wert den ich der Variable zuweise
+
+- Variable namen kann beliebig gewählt werden
+    ABER:   - keine Zahl am Anfang
+            - keine Sonderzeichen (AUßER Unterstrich als Leerzeichen)
+
+3. Konvertieren von Datentypen
+
+- man kann einen Datentyp in einen anderen Konvertieren
+    -> nennt man typecasten
+
