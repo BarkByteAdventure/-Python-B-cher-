@@ -1,0 +1,91 @@
+Mathematik
+
+from math import *
+
+-> ist schon vorgegeben
+
+
+1. Mathematische Funktionen
+
+-> wird verwendet für Wurzelziehen, Winkelfunktionen etc.
+
+1.1 Wurzelziehen
+
+= sqrt bedeutet Squareroot = dt. Quadratwurzel
+
+Bsp.:   from mathe import sqrt
+
+        print(sqrt(2))
+        -> Output: 1.414213562373095
+
+        print(sqrt(64))
+        -> Output: 8.0
+
+        print(sqrt(100))
+        -> Output: 10.0
+
+1.2 Trigonometrie
+
+-> Winkelfunktionen wie sin, cos, tan -> lassen sich benutzten
+-> gibt außerdem inverse Funktionen asin, acos und atan
+
+Bsp.:   print(sin(35))
+        -> Berechnet den Sinus von 35
+        -> Output: -0.428182669496151
+
+        print(cos(35))
+        -> Berechnet den Cosinus von 35
+        -> Output: -0.9036922050915067
+
+        print(tan(35))
+        -> Berechnet den Tangens von 35
+        -> Output: 0.47381472041445105
+
+- es ist außerdem möglich, das Result in Degree oder Radiant umzuwandeln
+
+Degrees = Grad -> Kreis hat 360°
+
+Radiant = Bogenmaß -> Möglichkeit Winkel zu Messen von Kreisen
+
+
+2. Fakultät
+
+= ermöglicht es die Fakultätsfunktion zu verwenden
+
+Bsp.:   print(factorial(5))
+        -> gerechnet wird: 5x4x3x2x1    auch 5! geschrieben 
+        -> Output: 120
+
+3. Logarithmusfunktionen
+
+= um den Logarithmus einer Zahl, zu einer bestimmten Basis, zu ermitteln
+    -> gibt es meherer Funktionen
+
+Bsp.:   print(log10(10000))
+        -> Logarithmus von 10000 Basis 10(4)
+        -> Output: 4.0 
+
+        print(log(10000))
+        -> Logarithmus von 10000 Basis e
+        -> Output: 9.210340371976184
+
+        print(log(10000, 2))
+        -> Logarithmus von 10000 Basis 2
+        -> Output: 13.28771237954945
+
+Funktion für Konstante ein
+
+Bsp.:   print(e)
+        -> Output: 2.718281828459045
+
+Funktion zum Potenzieren
+
+Bsp.:   print(pow(5,2))
+        -> gibt 5 hoch 2 aus 
+        -> Output: 25.0
+
+Funktion zum Potenzieren von der Variable ein
+
+Bsp.:   print(exp(5))
+        -> gibt e hoch 5 aus
+        -> Output: 148.4131591025766
