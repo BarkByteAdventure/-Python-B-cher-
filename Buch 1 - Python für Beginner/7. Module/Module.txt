@@ -1,0 +1,55 @@
+Module
+
+= sind Python Dateien -> in andere Python Dateien, importiert werden
+-> werden selbst nicht ausgeführt
+    -> stellen z.B. Funktionen oder Klassen zur Verfügung
+-> werden benutz um Anwendungen -> übersichtlicher und keichter verständlich, zu machen
+
+1. Import Statement
+
+- zum Importieren von Modulen in Python
+    -> sogennante import Keyword benutzt
+
+Bsp.:   modul1.py
+
+        def hallo():
+            print("Hallo!")
+
+        def bye():
+            print("Auf Wiedersehen!")
+        ---------------------------------------------------
+        main.py
+
+        modul1.hallo()
+
+        modul1.bye()
+
+        -> Dateien sind im selben Verzeichnis
+            -> Dateien in die anderen importierbar
+        -> Verweis auf das Modul -> benutzt werden
+
+2. From Statement
+
+= from Keyword wird in Verbindung mit dem import Keyword benutzt
+    -> um bestimmt Dinge aus dem Modul zu Importieren
+
+Bsp.:   from modul1 import hallo
+
+        hallo()
+        -> Output:  Hallo!
+
+        modul1.bye()
+        -> Output:  Error   -> Funktioniert nicht
+
+2.1 Alles aus einem Modul Importieren
+
+= benötigt das Asterisk Symbol *
+
+Bsp.:   from modul1 import *
+
+        hallo()
+        -> Output:  Hallo!
+
+        bye()
+        -> Output:  Auf Wiedersehen!
+
