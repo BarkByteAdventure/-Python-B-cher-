@@ -1,0 +1,135 @@
+Stringfunktionen
+
+= kann man auf eine sehr große Anzahl an Funktionen Anwendungen
+
+
+1. Strings als Sequenzen
+
+= können Strings als Sequenzen von Buchstaben angesehen werden
+-> Indexieren und Iterieren von bzw. über Strings möglich ist
+-> Strings können miteinander addiert und multipliziert werden
+
+Bsp.:   text = "Hello World!"
+        print(text[1:5]) # gibt 'ello' aus
+        print(text + "Today")   # gibt 'Hello World!Today' aus
+
+        for s in text:  
+        print(s)        # wird als Liste behandelt
+
+1.1 Spezielle Zeichen
+
+- Zeichen wie Zeilenumbrüche, Leerzeichen oder Backspace
+
+Bsp.:   print("Das ist ein\nZeilenumbruch")
+        -> \n bewirkt Zeilenumbruch
+
+        print("Das ist ein \tTab")
+        -> \t bewirkt den Tab
+
+
+2. Stringformatierung
+
+-> ermöglicht den Gebrauch von sogennanten Platzhaltern
+    -> im Nachhinein in den String geladen werden
+
+Bsp.:   print("Hello %s" % "World")
+        -> gibt "Hello World" aus
+
+2.1 Platzhalter für Stringformatierung
+
+ ---------------------------------------
+|   Platzhalter |   Datentypen          |
+ ---------------------------------------
+|       %s      |   Text / String       |
+ ---------------------------------------
+|  %d oder %i   |   Ganzzahl / Integer  |
+ ---------------------------------------
+|       %c      |   Zeichen / Charakter |
+ ---------------------------------------
+
+ 
+3. Triple Quotes
+
+= bedeutet dreifache Anführungszeichen
+-> dabei werden Zeilenumbrüche auch ohne \n gemacht
+
+text = """Hallo Welt! Das ist ein Text,
+    das ist eine neue Zeile welche eingerückt ist
+
+und das war eine leere Zeile."""
+
+
+4. Stringfunktionen
+
+4.1 Listenfunktion
+
+-> len, max und min sind Listenfunktionen und können auf Strings angewand werden
+
+Bsp.:   len("Hello World!")
+        -> Output: 10
+
+        max("Hello World!")
+        -> Output: r
+        -> größte Zeichen im String / Alphabet
+
+        min("Hello World!")
+        -> Output: 
+        -> Leerezeichen
+
+4.2 Case-Related Funktionen
+
+= verändern gewisse Buchstaben -> Groß- und Kleinschreibung 
+
+ -----------------------------------------------------------------------------------------------
+| Funktion      |   Beschreibung                                                                |
+ -----------------------------------------------------------------------------------------------
+| capitalize()  |   Macht den Anfangsbuchstaben eines Strings zu einem Großbuchstaben.          |
+ -----------------------------------------------------------------------------------------------
+| upper()       |   Macht alle Buchstaben eines Strings zu Großbuchstaben.                      |
+ -----------------------------------------------------------------------------------------------
+| lower()       |   Macht alle Buchstaben eines Strings zu Kleinbuchstaben.                     |
+------------------------------------------------------------------------------------------------
+| swapcase()    |   Invertiert die Groß- und Kleinschreibung aller Buchstaben eines Strings.    |
+------------------------------------------------------------------------------------------------
+| title()       |   Konvertiert einen String in das Titelformat.                                |
+------------------------------------------------------------------------------------------------
+
+4.3 Replace Funktion
+
+= ersetzt die Vorkommnisse eines bestimmten Strings
+    -> in einem bestimmten String -> durch einen bestimmten String
+
+Bsp.:   text = "Wie geht es Ihnen? Geht es Ihnen gut?"
+        text.replace("Ihnen", "dir")
+
+        print(text)
+        -> Output: Wie geht es Ihnen? Geht es Ihnen gut?
+
+        print(text.replace("Ihnen", "dir"))
+        -> Output: Wie geht es dir? Geht es dir gut?
+
+4.4 Find Funktion
+
+= wird benutzt, um einen bestimmten String, in einem anderen bestimmten String zu finden
+
+Bsp.:   alph = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+        print(alph.find("Q"))
+        -> Output: 16
+
+        print(alph.find("A"))
+        -> Output: 0
+
+    -> gibt die Stelle des Buchstaben im Alphabet aus
+
+4.5 Count Funktion
+
+= wird benutzt, um herauszufinden wie oft ein bestimmter String, in einem anderen bestimmten String vorkommt
+
+Bsp.:   text = "Hello World! Das ist ein Text!"
+        print(text.count("!"))
+        -> Output: 2
+
+        print(text.coun("l"))
+        -> Output: 3
+    
