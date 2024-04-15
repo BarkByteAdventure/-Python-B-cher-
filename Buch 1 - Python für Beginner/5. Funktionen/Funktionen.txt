@@ -1,0 +1,77 @@
+Funktionen
+
+= sind Blöcke, welche organisierten, wiederverwendbaren Code beinhalten
+    -> Anwendungen modularer und erhalten einen hohen Grad an Wiederverwendung von Code
+
+
+1.1 Funktionen definieren
+
+= benötigt Schlüsselwort def()
+    -> in () sind Parameter enthalten oder sind leer
+    -> nach () kommt :
+    -> alles danach wird eingerückt und gehört zur Funktion
+
+Bsp.:   def halloWorld():
+            print("Hallo World!")
+
+        -> gibt String "Hallo World!" aus
+
+Bsp.:   def addieren(x, y):
+            return x + y
+        
+        -> Rückgabewert -> Schlüsselwort = return
+        -> x, y -> zwei Parameter
+
+1.2 Funktionen aufrufen 
+
+- Funktionen aufzurufen -> nur ihren Namen, gefolgt von Klammern(ggf. Parameter), angeben
+
+Bsp.:   helloWorld()
+            -> ruft helloWorld() Funktion aufrufen
+        
+        print(addieren(5, 10))
+            -> addiert die Parameter wie in der Funktion beschrieben zusammen
+                -> keine Ausgabe auf der Konsole -> lediglich einen Rückwert
+
+
+ 2. Standardparameter
+
+ - um extra Parameter nicht immer extra angeben zu müssen -> Standardwerte versehen
+
+    Bsp.:   def person(name, alter = 21,groesse = 1.80):
+                print(name, alter, groesse)
+
+
+3. Variable Parameteranzahl
+
+- bei Definition der/ einer Funktion noch nicht weiß wie viel Parameter genutzt werden soll
+    -> Tupel als Parameter ausweichen
+
+    Bsp.:   def summe(*zahl):
+            summe = 0
+            for i in zahl:
+                summe += i
+            return summe
+
+        print(summe(1,2,3))
+
+        -> *zahl = unveränderbares Tupel
+        
+
+4. Gültigkeitsbereiche
+
+- gibt zwei Arten von Variablen:    1. lokale Variablen -> gelten nur in einen bestimmten Bereich
+                                    2. globale Variablen -> gelten überall
+
+Bsp.:   def funktion():
+            variable = 10
+            print(variable)
+        
+        funktion()
+        print(variable)
+
+        -> wird nicht funktionieren (print(variable))
+            -> Variable in Funktion wird definiert -> außerhalb nicht aufrufbar
+                                                        -> hat nur lokale Gültigkeit
+        
+
